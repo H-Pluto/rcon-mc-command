@@ -1,6 +1,6 @@
 {
   "name": "rcon-mc-command",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "通过 RCON 连接 Minecraft Java 版服务器，提供类型安全的常用指令封装（give / effect / 管理等）。",
   "license": "MIT",
   "author": "huaju",
