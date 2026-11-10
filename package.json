@@ -1,6 +1,6 @@
 {
   "name": "rcon-mc-command",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "提供连接 minecraft 服务器的 rcon 功能，并且封装了常用的指令。",
   "license": "MIT",
   "author": "huaju",
