@@ -20,7 +20,7 @@ export class CommandClient {
    */
   constructor(rcon: MinecraftRcon) {
     this.rcon = rcon
-    Object.assign(this, createItemGiver(rcon))
+    Object.assign(this, createItemGiver(rcon), createEffectCommands(rcon))
   }
 
   // ============ 服务器指令 ============

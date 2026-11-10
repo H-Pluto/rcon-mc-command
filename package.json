@@ -1,9 +1,26 @@
 {
   "name": "rcon-mc-command",
   "version": "1.0.2",
-  "description": "提供连接 minecraft 服务器的 rcon 功能，并且封装了常用的指令。",
+  "description": "通过 RCON 连接 Minecraft Java 版服务器，提供类型安全的常用指令封装（give / effect / 管理等）。",
   "license": "MIT",
   "author": "huaju",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H-Pluto/rcon-mc-command.git"
+  },
+  "homepage": "https://github.com/H-Pluto/rcon-mc-command#readme",
+  "bugs": {
+    "url": "https://github.com/H-Pluto/rcon-mc-command/issues"
+  },
+  "keywords": [
+    "minecraft",
+    "rcon",
+    "minecraft-server",
+    "minecraft-java",
+    "typescript",
+    "command",
+    "mc"
+  ],
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
