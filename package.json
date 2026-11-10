@@ -1,0 +1,38 @@
+{
+  "name": "rcon-mc-command",
+  "version": "1.0.0",
+  "description": "提供连接 minecraft 服务器的 rcon 功能，并且封装了常用的指令。",
+  "license": "MIT",
+  "author": "huaju",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "oxlint": "^1.90.0",
+    "prettier": "^3.7.4",
+    "typescript": "^7.0.2"
+  }
+}
