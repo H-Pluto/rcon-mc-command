@@ -1,0 +1,59 @@
+{
+  "name": "@H-Pluto/rcon-mc-command",
+  "version": "1.0.3",
+  "description": "通过 RCON 连接 Minecraft Java 版服务器，提供类型安全的常用指令封装（give / effect / 管理等）。",
+  "license": "MIT",
+  "author": "huaju",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H-Pluto/rcon-mc-command.git"
+  },
+  "homepage": "https://github.com/H-Pluto/rcon-mc-command#readme",
+  "bugs": {
+    "url": "https://github.com/H-Pluto/rcon-mc-command/issues"
+  },
+  "keywords": [
+    "minecraft",
+    "rcon",
+    "minecraft-server",
+    "minecraft-java",
+    "typescript",
+    "command",
+    "mc"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "registries.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "oxlint": "^1.90.0",
+    "prettier": "^3.7.4",
+    "typescript": "^7.0.2"
+  }
+}
